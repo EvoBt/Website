@@ -3,7 +3,6 @@ import { MaxWidthWrapper } from "./max-witdth-wrapper";
 import { Icons } from "./icons";
 import { NavItems } from "./nav-items";
 import { buttonVariants } from "./ui/button";
-import { Span } from "next/dist/trace";
 import { Cart } from "./cart";
 
 export const Navbar = () => {
@@ -35,10 +34,7 @@ export const Navbar = () => {
                   )}
 
                   {user ? null : (
-                    <span
-                      className="h-6 w-px bg-gray-200"
-                      aria-hidden="true"
-                    ></span>
+                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   )}
                   {user ? (
                     <p></p>
@@ -51,10 +47,7 @@ export const Navbar = () => {
                     </Link>
                   )}
                   {user ? (
-                    <span
-                      className="h-6 w-px bg-gray-200"
-                      aria-hidden="true"
-                    ></span>
+                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   ) : null}
 
                   {user ? null : (
